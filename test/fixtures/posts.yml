@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+tdc_2013:
+  title: "TDC 2013 – Ferramentas e Bibliotecas que você deveria estar utilizando"
+  content: "Ontem (26/05/2013) eu e o Danimar palestramos na trilha de Web University no TDC. Foi nossa primeira palestra fora do trabalho e deu tudo certo   Só ficou faltando falar do último tema Twitter Bootstrap, porque não deu tempo..."
+  published: 2013-04-11 15:32:00
+  author: "maxcnunes"
+
+config_continuous_integration:
+  title: "Configurando Continuous Integration para .NET com AppHarbor e Github"
+  content: "Um dos projetos que tenho trabalhado ultimamente tem crescido aos poucos e já começa a apresentar alguns problemas comuns de qualquer projeto..."
+  published: 2013-05-27 15:18:00
+  author: "maxcnunes"
+
+zsh_and_ohmyzsh:
+  title: "ZSH e Oh My ZSH"
+  content: "O ZSH é um shell para Unix que vai fazer você não querer mais usar qualquer outro shell além dele..."
+  published: 2013-05-31 15:03:00
+  author: "maxcnunes"
