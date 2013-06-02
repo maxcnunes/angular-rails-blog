@@ -1,9 +1,12 @@
 AngularRailsBlog::Application.routes.draw do
+  root to: 'home#index'
+
   # resources :posts
   scope '/api' do 
-    get "/posts(.:format)" => "posts#index"
-    get "/posts/:id(.:format)" => "posts#show"
+    get '/posts(.:format)' => 'posts#index'
+    get '/posts/:id(.:format)' => 'posts#show'
   end
+
 
 
   # The priority is based upon order of creation:
