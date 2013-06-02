@@ -1,9 +1,18 @@
 <div ng-controller="PostsCtrl" id="posts-ctrl">
-  <div id="post-list-container">
+  <div id="posts-list-container">
     <ul>
-      <li ng-repeat="post in posts">
-        <h3>{{post.title}} <small>({{post.published}})</small></h3>
+      <li ng-repeat="post in posts" ng-click="showPost(post, $index)">
+        <h3 ng-class="{active: $index == selectedRow}">{{post.title}} <small>({{post.published | date:'mediumDate'}})</small></h3>
       </li>
     </ul>
   </div>
+  <div id="post-view-container" ng-show="selectedPost">
+    <h2>{{selectedPost.title}}</h2>
+    <div ng-bind-html-unsafe="selectedPost.content"></div>
+    <p>
+      Published at {{selectedPost.published | date: 'mediumDate'}}
+      by <strong>{{selectedPost.author}}</strong>
+    </p>
+  </div>
+</div>  
 </div>

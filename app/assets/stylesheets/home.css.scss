@@ -20,6 +20,11 @@ header {
   line-height: 36px;
   font-weight: bold;
   padding-left: 15px;
+  font-family: 'Allerta', Helvetica, Arial, sans-serif;
+  a{
+    font-size:14px;
+    color: #BFEFFF;
+  }
 }
 
 #posts-ctrl {
@@ -32,11 +37,11 @@ header {
 }
 
 #posts-list-container {
-  background-color: #fff;
+  background-color: #4F4F4F;
   position: absolute;
   min-height: 700px;
   width: 300px;
-  top: 37px;
+  top: 0px;
   left: 0;
   bottom: 0;
   overflow: auto;
@@ -47,27 +52,32 @@ header {
     padding: 0px;
     li {
       cursor: pointer;
-      border-bottom: 1px solid #ddd;
-      padding: 0 10px;
+      border-bottom: 1px solid #636363;
+      padding: 5px 10px;
+      &:hover { background-color: #636363; }
     }
   }
   h3 {
     font-size: 14px;
+    font-family: 'Allerta', Helvetica, Arial, sans-serif;
+    color: #fff;
+    margin: 0;
     small {
       font-size: 12px;
       color: #ccc;
       font-weight: normal;
+      display: block;
     }
     &.active {
-      color: red;
+      color: #7FFF00;
     }
   }
 }
 
-#posts-view-container {
+#post-view-container {
   position: absolute;
   border-left: 1px solid #d0d0d0;
-  top: 37px;
+  top: 0px;
   left: 300px;
   right: 0;
   bottom: 0;
