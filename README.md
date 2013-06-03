@@ -34,3 +34,9 @@ Based on this post: [AngularJS on Rails 4](http://coderberry.me/blog/2013/04/22/
 
 **ps**: If you don't have curl configured yet then will need run this before the 6 command: 
 `sudo apt-get install libcurl4-gnutls-dev`
+
+### Deploy to Heroku
+1. `git push heroku master:master`
+2. `heroku ps:scale web=1`
+3. `heroku run rake db:migrate`
+4. `heroku run rake post_sync:maxcnunes`
